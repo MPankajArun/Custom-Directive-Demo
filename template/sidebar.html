@@ -1,0 +1,8 @@
+<div class="col-lg-4 bg-lightGray">
+    <h4>Sidebar</h4>
+    <ul class="sidebar">
+        <li ng-repeat="item in sidebarItems" ng-class="{'selected': $root.selectedBrandId == item.Id}">
+            <a href="javascript:void(0);" ng-click="selectBrand(item)">{{item.Name}}</a>
+        </li>
+    </ul>
+</div>
